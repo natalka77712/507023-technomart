@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Наталья Костоусова](https://up.htmlacademy.ru/htmlcss/21/user/507023).
-* Наставник: `Неизвестно`.
+* Наставник: [Николай Думчев](https://htmlacademy.ru/profile/nikopol_fw).
 
 ---
 
