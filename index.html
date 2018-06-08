@@ -3,17 +3,21 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
   <header class="main-header">
   	<div class="header-hot-keys"> 
       <a class="header-logo">
-        <img src="img/logo-small.png" width="220" height="47" alt="Логотип Техномарт">
+          <img src="img/logo-small.png" width="220" height="47" alt="Логотип Техномарт"> 
       </a>	
           <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
             <input class="search-input" type="search" name="search" placeholder="Поиск:">
             <svg class="search-icon" width="17" height="17"></svg>
-            <button class="button" type="submit">Отправить</button>
+            <button class="visually-hidden-button" type="submit"></button>
         </form>
         <a class="header-bookmark" href="#">Закладки: 0</a>
         <a class="header-basket" href="#">Корзина: 0</a>
@@ -68,10 +72,12 @@
            <h2>Перфораторы</h2>
            <p>Настоящие мужские игрушки</p>
            <a class="slider-button" href="#">Открыть каталог</a>
+           <img src="img/slide-1.jpg" width="620" height="266" alt="slider-image-1">
          </article>
          <article class="slider-item2 drill">
            <h2>Дрели</h2>
            <p>Соседям на радость!</p>
+           <img src="img/slide-2.jpg" width="620" height="266" alt="slider-image-2">
            <a class="slider-button" href="#">Открыть каталог</a>
          </article>
 
@@ -86,48 +92,68 @@
         </div>
       </div>  
     </section>
-    <section class="popular goods">
+    <section class="popular-goods">
       <h2 class="visually-hidden">Раздел о продукции компании</h2>
-      <p>Популярные товары:</p>
-      <a class="popular-goods-button" href="#">Все популярные товары</a>
+      <div class="products-header">
+        <p>Популярные товары:</p>
+        <a class="popular-button" href="#">Все популярные товары</a>
+      </div>
       <ul class="products-catalog">
-        <li class="product-item">
+        <li class="products-item">
           <a href ="#" class="product-link">
-            <h3 class="product-name">Перфоратор BOSCH BFG 9000</h3>
+             <h3 class="product-name">Перфоратор BOSCH BFG 9000</h3>
             <img src="img/bosch-9000.jpg" width="220" height="155" alt="item image">
-            <b class="old-price">32500 Р.</b>
-            <del class="discount-price">25500 Р.</del>
+            <del class="old-price">32500 Р.</del>
+            <b class="discount-price">22500 Р.</b>
           </a>
+             <div class="actions-buttons">
+              <a class="buy-button" href="#">Купить</a>
+              <a class="bookmark-button" href="#">В закладки</a>
+            </div>
         </li>
         <li class="products-item">
           <a href ="#" class="product-link">
             <h3 class="product-name">Перфоратор BOSCH BFG 3000</h3> 
             <img src="img/bosch-3000.jpg" width="220" height="155" alt="item image">
-            <b class="old-price">22500 Р.</b>
-          <del class="discount-price">15500 Р.</del>
+            <del class="old-price">22500 Р.</del>
+            <b class="discount-price">15500 Р.</b>
           </a>
+          <div class="actions-buttons">
+              <a class="buy-button" href="#">Купить</a>
+              <a class="bookmark-button" href="#">В закладки</a>
+          </div>
         </li>
         <li class="products-item">
           <a href="#" class="product-link">
             <h3 class="product-name">Перфоратор BOSCH BFG 6000</h3>
             <img src="img/bosch-6000.jpg" width="220" height="155" alt="item image">
-            <b class="old-price">30500 Р.</b>
-            <del class="discount-price">25500 Р.</del>
+            <del class="old-price">30500 Р.</del>
+            <b class="discount-price">25500 Р.</b>
           </a>
+          <div class="actions-buttons">
+              <a class="buy-button" href="#">Купить</a>
+              <a class="bookmark-button" href="#">В закладки</a>
+          </div>
         </li>
         <li class="products-item">
            <a href="#" class="product-link">
              <h3 class="product-name">Перфоратор BOSCH BFG 2000</h3>
              <img src="img/bosch-2000.jpg" width="220" height="155" alt="item image">
-             <del class="discount-price">12500 Р.</del>
+             <b class="discount-price">12500 Р.</b>
            </a>
+           <div class="actions-buttons">
+              <a class="buy-button" href="#">Купить</a>
+              <a class="bookmark-button" href="#">В закладки</a>
+           </div>
         </li>
       </ul> 
     </section>
     <section class="popular-manufacturers">
       <h2 class="visually-hidden">Раздел о производителях</h2>
-      <p>Популярные производители:</p>
-      <a class="popular-goods-button" href="#">Все производители</a>
+      <div class="manufacturers-header">
+        <p>Популярные производители:</p>
+        <a class="popular-goods-button" href="#">Все производители</a>
+      </div>
       <ul class="manufacturers-catalog"> 
         <li><a href=""><img src="img/bosch.png" width="122" height="32" alt="Bosch"></a></li>
         <li><a href=""><img src="img/makita.png" width="123" height="40" alt="Makita"></a></li>
@@ -147,7 +173,7 @@
         <li class="service-warranty"><a class="warranty-link" href="#">Гарантия</a></li>
         <li class="service-credit"><a class="credit-link" href="#">Кредит</a></li>  
       </ul>
-      <ul class="services-menu-description">
+      <ul class="services-description">
         <li class="services-description service-delivery-active">
       	  <h3>Доставка</h3>
           <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
@@ -211,13 +237,13 @@
     <div class="footer-links">
       <ul class="social-list">
         <li class="social-button">
-        <a class="social-social-vk" href="#"></a>
+        <a class="social-button-vk" href="#">Вконтакте</a>
        </li>
        <li class="social-button">
-        <a class="social-social-fb" href="#"></a>
+        <a class="social-button-vk-fb" href="#">Фейсбук</a>
        </li>
        <li class="social-button">
-       <a class="social-social-ig" href="#"></a>
+       <a class="social-button-ig" href="#">Инстаграм</a>
        </li>
       </ul>
       <div class="feedback-and-copyright">
@@ -225,28 +251,30 @@
         <a class="feedback" href="#">mail@htmlacademy.ru</a>
         <b>Разработано:</b>
         <a class="htmlacademy-link" href="#">htmlacademy.ru</a>
-      </div>
-      <p class="footer-copyright">2010-2016 Компания «Техномарт» Все права защищены
+        <p class="footer-copyright">@2010-2017 Компания «Техномарт» Все права защищены
       </p>
+     </div>
     </div>
   </footer>
     
  <section class="write-us-popup">
    <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
  	 <label for="write-us-identification">Ваше имя:</label>
-     <input id="write-us-identification" class="input" type="text" placeholder="Представтесь, пожалуйста">
+     <input id="write-us-identification" class="input" type="text" placeholder="Представьтесь, пожалуйста">
      <label for="write-us-email">Ваше email:</label>
      <input id="write-us-email" class="input" type="text" placeholder="Введите ваш электронный адрес">
      <label for="write-us-message">Текст письма:</label>
      <input id="write-us-message" class="input" type="text" placeholder="В свободной форме">
-   <button class="button" type="submit">Отправить</button>
+   <div class="write-button-popup" >
+     <button class="popup-button" type="submit">Отправить</button>
+   </div>
   </form>
  </section>
 
  <section class="map-popup">
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <p>
-      <img src="img/map-popup.jpg" alt="Карта с адресом: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="940" height="446">
+      <img src="img/map-popup.png" alt="Карта с адресом: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="940" height="446">
       </p>
       <button class="popup-close" type="button">Закрыть</button>
   </section>
