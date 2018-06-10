@@ -14,8 +14,26 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .header-hot-keys {
   background-color: #293449;
+  max-height: 42px;
+  width: 100%;
 }
 
 .header-hot-keys a{
@@ -24,15 +42,44 @@ a {
   color: #ffffff;
  }
 
+.main-header {
+  background-color: #f2f6f8;
+  margin-bottom: 60px;
+  padding-bottom: 60px;
+}
+
+.main-header .container {
+  display: flex;
+  justify-content: flex-start;
+  width: 940px;
+  margin: 0 auto;
+}
+
+.header-container-user {
+  display: flex;
+  justify-content: flex-end;
+  box-sizing: border-box;
+}
+
+.header-container-user a{
+  width: 150px;
+  padding-top: 10px;
+  padding-bottom: 12px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
 .header-bookmark:active,
 .header-basket:active {
   color: rgba(255, 255, 255, 0.6);
   background-color: #161d29;
+
  }
 
 .header-bookmark:hover,
 .header-basket:hover {
   background-color: #212a3a;
+  box-sizing: border-box;
  }
 
 .header-bookmark:focus,
@@ -60,18 +107,23 @@ a {
 }
 
 .search-form input {
-  font-family: inherit;
+  width: 270px;
+  height: 42px;
   font-size: 17px;
-  font-weight: 18px;
   color: #ffffff;
   background-color: #293449;
   border: none;
+  font-family: "CuprumRegular", "Arial", sans-serif;
 }
 
 .search-form input:focus {
   color: #000000;
   background-color: #ffffff;
   outline: none;
+}
+
+.visually-hidden-button {
+  display: none;
 }
 
 .header-logo {
@@ -97,25 +149,69 @@ a {
   background-color: #ee3643;
 }
 
+.bottom-header-container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.header-contacts-profile {
+  display: flex;
+  min-height: 158px;
+  padding-top: 46px;
+  box-sizing: border-box;
+}
+
 .about-company {
   color: #ee3643;
   font-size: 16px;
   line-height: 23px;
-  font-family: "CuprumItalic", Arial, sans-serif;
-  text-decoration-color: #000000;
+  font-style: italic;
+  width: 300px;
+  padding: 0;
+  margin:  0;
+  padding-left: 50px;
  }
+
+.header-adress-information {
+  margin-right: 50px;
+}
 
 .contacts {
   font-size: 21px;
   line-height: 21px;
   color: #ee3643;
-  border: 1px solid #ffffff;
+  border: 3px solid #ffffff;
+  width: 270px;
+  padding: 10px 15px;
+  display: block;
+  box-sizing: border-box;
 }
 
 .address {
   color: #32425c; 
   font-size: 14px;
   line-height: 24px;
+  text-align: center;
+  margin: 0;
+  padding: 0:;
+}
+
+.user-navigation {
+  display: flex;
+}
+
+.user-navigation li {
+  min-height: 45px;
+ }
+
+
+.user-navigation li:first-child {
+  width: 121px;
+  margin-right: 10px;
+}
+
+.user-navigation li:last-child {
+  width: 150px;
 }
 
 .user-navigation,
@@ -140,14 +236,23 @@ a {
 
 .main-navigation {
   background-color: #32425c;
-  border-bottom: 1px solid #32425c;
+  border-bottom: 5px solid #32425c;
+}
+
+.site-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0 50px;
 }
 
 .site-navigation li a{
   font-size: 17px;
   line-height: 17px;
   color: #ffffff; 
-  }
+  padding: 20px 0;
+  display: block;
+}
 
 .site-navigation li a:hover {
   background-color: #293449;
@@ -156,6 +261,21 @@ a {
 .site-navigation li a:active {
   background-color: #1d2739;
   color:rgba(255, 255, 255, 0.5);
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.features-row {
+  display: flex;
+}
+
+.features-item {
+  width: 300px;
+  margin-right: 20px;
+  padding: 21px 23px;
 }
 
 .features-list h3,
@@ -173,6 +293,8 @@ a {
   line-height: 18px;
   text-transform: uppercase;
   background-color: rgba(0, 0, 0, 0.1);
+  width: 135;
+  display: inline-block;
 }
 
 .features-list a:hover,
@@ -196,6 +318,7 @@ a {
 
 .features-item.technic {
   background-color: #dc91d8;
+  margin-right: 0;
 }
 
 .features-item.discounts {
@@ -204,6 +327,17 @@ a {
 
 .features-item.delivery {
   background-color: #ffc047;
+}
+
+.wrapper-slider {
+  display: flex;
+}
+
+.slider-item1 {
+  position: absolute;
+  width: 620px;
+  height: 266px;
+  z-index: 2;
 }
 
 .slider-item1.perforator h2,
@@ -240,9 +374,27 @@ a {
   background-color: #ba2732;
  }
 
+.features-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.features-column .features-item {
+  margin-right: 0;
+  margin-bottom: 20px;
+}
+
+.features-item.delivery {
+  margin-bottom: 53px;
+}
+
 .products-header,
 .manufacturers-header {
   background-color: #f9f5f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .products-header p,
@@ -252,6 +404,7 @@ a {
   line-height: 30px;
   font-weight: 400;
   text-transform: uppercase;
+  margin-left: 26px;
 }
 
 .products-header a,
@@ -261,11 +414,31 @@ a {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  width: 253px;
+  margin: 24px;
+  text-align: center;
 }
 
 .products-catalog {
   list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
 }
+
+.products-item {
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  margin-right: 20px;
+}
+
+.products-item:last-child {
+  margin-right: 0;
+}
+
 
 .products-item h3 {
   font-size: 18px;
@@ -329,14 +502,30 @@ a {
 
 .manufacturers-catalog {
   list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 85px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .manufacturers-catalog li {
   border: 1px solid #ebebeb;
+  width: 220px;
+  height: 145px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.manufacturers-catalog li:nth-child(4),
+.manufacturers-catalog li:nth-child(8) {
+  margin-right: 0;
 }
 
 .services {
   background-color: #f4f8fa;
+  padding-top: 65px;
 }
 
 .services h2 {
@@ -344,17 +533,30 @@ a {
   line-height: 30px;
   color: #000000;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 25px;
 }
 
 .services p {
   font-size: 13px;
   line-height: 24px;
   color: #000000;
-  font-family: "PTSansRegular", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
+  margin: 0;
+  margin-bottom: 67px;
+  width: 400px;
+}
+
+.services-wrapper {
+  display: flex;
+  width: 240px;
 }
 
 .services-menu {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .services-menu li {
@@ -363,6 +565,8 @@ a {
   color: #ffffff;
   background-color: #32425c;
   font-weight: 700;
+  width: 240px;
+  border-bottom: 1px solid #4d637b;
 }
 
 .services-menu a {
@@ -382,11 +586,16 @@ a {
   list-style: none;
 }
 
+.delivery-wrapper {
+  display: flex;
+}
+
 .services-description h3 {
   font-size: 36px;
   line-height: 36px;
   color: #32425c;
   text-transform: uppercase;
+  width: 300px;
 }
 
 .services-description p {
@@ -396,12 +605,39 @@ a {
   font-family: "PTSansRegular", "Arial", sans-serif;
 }
 
+
+.services-description a {
+  width: 195px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #ff5357;
+  text-transform: uppercase;
+}
+
+.services-container {
+  display: flex;
+  padding-top: 77px;
+  padding-bottom: 87px;
+}
+
+.about-delivery {
+  width: 540px;
+}
+
+.about-contacts {
+  width: 300px;
+  margin-left: auto;
+}
+
 .about-delivery h2,
-.about-contacts h3 {
+.about-contacts h2 {
   font-size: 30px;
   line-height: 30px;
   color: #000000;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 27px;
 } 
 
 .about-delivery p,
@@ -410,7 +646,12 @@ a {
   line-height: 24px;
   color: #000000;
   font-family: "PTSansRegular", "Arial", sans-serif;
+  margin: 0;
 } 
+
+.about-delivery .delivery-detalization {
+  margin-top: 25px;
+}
 
 .delivery-company {
   list-style: none;
@@ -435,10 +676,40 @@ a {
   background-color: #32425c;
 }
 
+.container {
+  margin: 0 auto;
+  width: 940px;
+}
+
+.footer-main-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 940px;
+  margin: 0 auto;
+
+}
+
+.footer-nav-menu {
+  display: flex;
+}
+
 .footer-nav-menu,
 .footer-navigation-products,
 .social-list {
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.footer-secondary-navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-navigation-products {
+  display: flex;
 }
 
 .footer-main-navigation p {
@@ -560,10 +831,6 @@ a {
   font-size: 17px;
   line-height: 18px;
  }
-
-.header-contacts-profile {
-  background-color: #f2f6f8;
-}
 
  .login-link {
   color: #000000;
