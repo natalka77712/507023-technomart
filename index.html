@@ -17,14 +17,14 @@
         </a>	
         <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
         	<input class="search-input" type="search" name="search" placeholder="Поиск:">
-          <span class="visually-hidden">
-            <button aria-label="submit" type="submit"></button>
-          </span>
+        	<div class="button-search" href="#"><span class="visually-hidden">Кнопка поиска</span>
+        		<svg class="loop" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z" fill="#fff"/></svg>
+          </div>
         </form>
         <div class="header-container-user">
-        	<a class="header-bookmark" href="#">Закладки: 0</a>
-        	<a class="header-basket" href="#">Корзина: 0</a>
-        	<a class="header-order" href="#">Оформить заказ</a> 
+        	<a class="header-link bookmark" href="#">Закладки: 0</a>
+        	<a class="header-link basket" href="#">Корзина: 0</a>
+        	<a class="header-top-link order" href="#">Оформить заказ</a> 
         </div>
       </div>
     </div>
@@ -36,13 +36,20 @@
         <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       </div>
       <ul class="user-navigation">
-      	<li class="login link">
-          <a class="link-navigation" href="#">Войти</a>
+      	<li class="user-profile">
+          <a class="user-identification" href="#">Войти</a>
         </li>
-        <li class="login link-registration">
-          <a class="link-navigation" href="registration.html">Регистрация</a>
-       </li>
-      </ul>
+        <li class="user-profile">
+          <a class="user-registration" href="registration.html">Регистрация</a>
+        </li>
+    <!--<li class="user-profile">
+        	<a class="user-identification profile" href="profile.html">Равшан Джамшутович</a>
+        <ul class="avtorized-list">
+        	<li><a href="#" class="orders">Мои заказы</a></li>
+          <li><a href="#" class="orders account">Личный кабинет</a></li>
+        </ul>
+        </li>-->
+     	</ul>
     	</div>
     	<nav class="main-navigation">
       	<ul class="site-navigation">
@@ -65,15 +72,15 @@
     	<div class="features-row">
       	<div class="features-item materials">
         	<h3>Материалы</h3>
-          <a class="features-buttom" href="#">На любой вкус</a>
+          <a class="features-button" href="#">На любой вкус</a>
         </div>
         <div class="features-item tool">
           <h3>Инструмент</h3>
-          <a class="features-buttom" href="#">На все случаи</a>
+          <a class="features-button" href="#">На все случаи</a>
         </div>
         <div class="features-item technic">
           <h3>Техника</h3>
-          <a class="features-buttom" href="#">Для стройки</a>
+          <a class="features-button" href="#">Для стройки</a>
         </div> 
       </div>
        
@@ -96,11 +103,11 @@
       <div class="features-column">
       	<div class="features-item discounts">
         	<h3>Скидки 50%</h3>
-          <a class="features-buttom" href="#">На 350 товаров</a>
+          <a class="features-button" href="#">На 350 товаров</a>
         </div>
         <div class="features-item delivery">
         	<h3>Доставка</h3>
-          <a class="features-buttom" href="#">Бесплатно</a>
+          <a class="features-button" href="#">Бесплатно</a>
         </div>
       </div> 
     </div> 
@@ -116,7 +123,7 @@
       	<li class="products-item">
         	<a href ="#" class="product-link">
             <h3 class="product-name">Перфоратор BOSCH BFG 9000</h3>
-            <img src="img/bosch-9000.jpg" width="220" height="155" alt="item image">
+            <div class="image"><img src="img/bosch-9000.jpg" width="220" height="155" alt="item image"></div>
             <del class="old-price">32500 Р.</del>
             <b class="discount-price">22500 Р.</b>
           </a>
@@ -128,7 +135,7 @@
         <li class="products-item">
           <a href ="#" class="product-link">
           	<h3 class="product-name">Перфоратор BOSCH BFG 3000</h3> 
-            <img src="img/bosch-3000.jpg" width="220" height="155" alt="item image">
+            <div class="image"><img src="img/bosch-3000.jpg" width="220" height="155" alt="item image"></div>
             <del class="old-price">22500 Р.</del>
             <b class="discount-price">15500 Р.</b>
           </a>
@@ -140,7 +147,7 @@
         <li class="products-item">
           <a href="#" class="product-link">
             <h3 class="product-name">Перфоратор BOSCH BFG 6000</h3>
-            <img src="img/bosch-6000.jpg" width="220" height="155" alt="item image">
+            <div class="image"><img src="img/bosch-6000.jpg" width="220" height="155" alt="item image"></div>
             <del class="old-price">30500 Р.</del>
             <b class="discount-price">25500 Р.</b>
           </a>
@@ -151,8 +158,9 @@
         </li>
         <li class="products-item">
           <a href="#" class="product-link">
+          	<div class="flag flag-new">новинка</div>
             <h3 class="product-name">Перфоратор BOSCH BFG 2000</h3>
-            <img src="img/bosch-2000.jpg" width="220" height="155" alt="item image">
+            <div class="image"><img src="img/bosch-2000.jpg" width="220" height="155" alt="item image"></div>
             <b class="discount-price">12500 Р.</b>
          </a>
          <div class="actions-buttons">
@@ -166,7 +174,7 @@
     	<h2 class="visually-hidden">Раздел о производителях</h2>
       <div class="manufacturers-header">
       	<p>Популярные производители:</p>
-        <a class="popular-goods-button" href="#">Все производители</a>
+        <a class="popular-goods button" href="#">Все производители</a>
       </div>
       <ul class="manufacturers-catalog"> 
       	<li><a href=""><img src="img/bosch.png" width="122" height="32" alt="Bosch"></a></li>
