@@ -66,17 +66,22 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
  }
 
-.logo-small:hover  {
-  background-color: #cb2834;
-  border-bottom: 5px solid #9b1c26;
-}
-
-.header-logo a:hover {
-  background-color: #ca2c37;
+.header-logo a:hover  {
+	background-image: url("../img/logo-small-hover.png");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .header-logo a:focus {
-  background-color: #ee3643;
+	background-image: url("../img/logo-small-focus.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header-logo:active {
+	background-image: url("../img/logo-small-active.png");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .bottom-header-container {
@@ -1627,7 +1632,7 @@ input[type="radio"].visually-hidden {
 .filter-input-checkbox:checked + label::before {
   content: "";
   position: absolute;
-  top: -7px;
+  top: 0;
   left: -34px;
   width: 23px;
   height: 23px;
