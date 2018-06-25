@@ -859,19 +859,9 @@ input[type="radio"].visually-hidden {
     display:block;
 }
 
-.products-item .image {
-  width:218px;
-  height:168px;
-  z-index: 1;
-}
-
-.products-item .image img{
-  max-width:100%;
-}
-
 .products-item h3 {
 	min-height: 40px;
-	padding: 0 25px;
+	padding: 0 18px;
   font-size: 18px;
   line-height: 20px;
   color: #000000;
@@ -880,6 +870,11 @@ input[type="radio"].visually-hidden {
   margin-top: 10px;
   text-align: center;
   order: 2;
+}
+
+.products-item img {
+	width: 218px;
+	margin-bottom: 10px;
 }
 
 .products-item .old-price,
@@ -893,8 +888,6 @@ input[type="radio"].visually-hidden {
 .products-item .old-price {
   text-align: center;
   min-height:20px;
-  margin-top:15px;
-  margin-bottom:10px;
   color:#999999;
   order: 3;
 }
@@ -1984,6 +1977,10 @@ input[type="radio"].visually-hidden {
   border-radius: 3px;
   text-transform: uppercase;
   box-sizing: border-box;
+  font-size: 13px;
+	line-height: 18px;
+	font-family: "PT Sans", "New Times Roman", serif;
+	text-align: center;
 }
 
 .pagination-item a,
