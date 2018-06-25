@@ -759,11 +759,9 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   width: 253px;
   margin: 24px;
-  text-align: center;
   vertical-align: middle;
   text-align: center;
   padding: 10px 25px;
-  text-transform: uppercase;
   box-sizing: border-box;
   border-radius: 2px;
 }
@@ -993,21 +991,25 @@ input[type="radio"].visually-hidden {
 .services-wrapper {
 	width: 100%;
 	background-color: #f4f8fa;
+	margin-bottom: 80px;
+	min-height: 552px;
 }
 
 .services {
-   padding-top: 65px;
+  padding-top: 65px;
   position: relative;
+  min-height: 454px;
 }
 
-.services h2 {
-  font-size: 30px;
-  line-height: 30px;
-  color: #000000;
+.services-description h3 {
+  font-size: 36px;
+  line-height: 24px;
+  color: #32425c;
   text-transform: uppercase;
   margin: 0;
-  padding: 0;
-  margin-bottom: 25px;
+  margin-bottom: 31px;
+  padding-top: 4px;
+  width: 400px;
 }
 
 .services p {
@@ -1019,6 +1021,36 @@ input[type="radio"].visually-hidden {
   margin-bottom: 67px;
   width: 400px;
 }
+
+.services-description .delivery-description {
+	width: 275px;
+}
+
+.services-description .warranty-description {
+	width: 360px;
+}
+
+.services-description .credit-description {
+	width: 280px;
+	margin-bottom: 26px;
+}
+
+.send-request {
+	color: #ffffff;
+  background-color: #ee3643;
+  font-size: 14px;
+  line-height: 18px;
+  display: block;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  text-align: center;
+  padding: 10px 25px;
+  box-sizing: border-box;
+  border-radius: 2px;
+  width: 195px;
+}
+
 
 .services-slider {
   display: flex;
@@ -1049,25 +1081,27 @@ input[type="radio"].visually-hidden {
   background-color: #32425c;
   width: 240px;
   border-bottom: 1px solid #4d637b;
+  cursor: pointer;
 }
 
-.services-menu a {
+.services-menu label {
 	font-size: 21px;
   line-height: 30px;
   color: #ffffff;
   padding-left: 21px;
   padding-bottom: 16px;
   padding-top: 14px;
+  min-height: 47px;
   display: block;
   vertical-align: middle;
   box-sizing: border-box;
 }
 
-.services-menu a:hover {
+.service-slider:hover {
   background-color: #293449;
 }
 
-.services-menu a:active {
+.service-slider:active {
   background-color: #ffffff;
   color: #32425c;
 }
@@ -1079,7 +1113,6 @@ input[type="radio"].visually-hidden {
 	list-style: none;
   padding: 0;
   margin: 0;
-  position: relative;
 }
 
 .services-description-list li {
@@ -1097,29 +1130,10 @@ input[type="radio"].visually-hidden {
 	display: none;
 }
 
-.services-description h3 {
-  font-size: 36px;
-  line-height: 24px;
-  color: #32425c;
-  text-transform: uppercase;
-  margin: 0;
-  margin-bottom: 31px;
-  width: 400px;
-}
-
-.services-description p {
-  font-size: 13px;
-  line-height: 24px;
-  color: #000000;
-  font-family: "PTSansRegular", "Arial", sans-serif;
-  margin: 0;
-  width: 400px;
-}
-
 .services-description img {
 	position: absolute;
 	top: 15px;
-	left: 169px;
+	right: -10px;
 	z-index: -1;
 }
 
@@ -1132,9 +1146,28 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 }
 
+.service-btn-1:checked ~ .services-slider .switch-btn-1,
+.service-btn-2:checked ~ .services-slider .switch-btn-2,
+.service-btn-3:checked ~ .services-slider .switch-btn-3 {
+	color: #32425c;
+	background-color: #ffffff;
+}
+
+.service-btn-1:focus ~ .services-slider .switch-btn-1,
+.service-btn-2:focus ~ .services-slider .switch-btn-2,
+.service-btn-3:focus ~ .services-slider .switch-btn-3 {
+	background-color: #293449;
+}
+
+.service-btn-1:checked ~ .services-slider .service-delivery-active,
+.service-btn-2:checked ~ .services-slider .service-warranty-active,
+.service-btn-3:checked ~ .services-slider .service-credit-active {
+	z-index: 1;
+}
+
+
 .services-container {
   display: flex;
-  padding-top: 77px;
   padding-bottom: 87px;
 }
 
