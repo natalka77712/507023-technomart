@@ -11,15 +11,16 @@
 <body>
 	<header class="main-header">
   	<div class="header-hot-keys">
-  		<div class="container">
-        <a class="header-logo">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="220" height="47"><image data-name="ТЕХНОМАРТ копия" width="220" height="47" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAANwAAAAvCAMAAAC/glQEAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAWlBMVEXtNkPuNkPtNkPtNkPuNkPsNkK1KTO1KTO1KTO1KTPtNkPuNkP3tLf71tj1m5/2p6vxb3b5y83////+9fb4wMLvTFbwXmf96+z84eL0jZLzf4XsNkK1KTMAAACExG+nAAAACnRSTlPs7f37+/v7/Pf40oNiQwAAAAFiS0dEHesDcZEAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiBhYQHCSrOPc2AAAClklEQVRo3u2X25KcIBCGyc6esohAo6Ik7/+c6QPM6GRzkQsVLf+qcbqwwf6KpgGlfpxWSn3p0+pLvewdwnp6Ube9Q1hPtwvuoLrgjqoL7qi64I6qC+47NaboYbfa4g/VGkut2W7oz3mA0PWlrxjaGXHSGrs7NgYfAWBsenp5H3hbOANFD9vqCSK9jDBRqyXbgiGKAMZGGPvcN4fbgTjpBDPL2iZC7NP9E3ZjOBJAyqD3r0dqcoy4gDPgte6jNCGcF/cAwPOKXpH9GE4/XG1urQLOQkfz0TzBOYAB7RaC9APgKZzQMGUIhipwhaoquAHD7gOTzOGspCu+ddwvSF52aJg81BD5XYFbMtYBpz3YVgJawplZD8xFycuAhhGUiKS2djgsKaNMyxyueMg/zi7n5QRjKtnX4c/XCRepYEtpwEIecquxKPMXHC5AnOCWstImccb5xuYwo5rqgWNJGL6Uwvtm8QxH4bfkhGszowRab/wocE2FBUVjNcml0ECXUN23cOjWY1ZmFJk0z065JcgeURccVhNfdrN/rLmEUJiSLVcQRpHlJk+EM2bE3O7rg8PDSZK6P4fL1REzb6LlZPjBOwZvgD4ncBA4QvNyGKsKjsH49PW0FYxk99xDAg6ySLklwEgViXfBvOayqoLjVJP8msMlWYdTTkLDnrxj0Bgu84xlRdYJNzCEHFEWZ0s5Kho6nMkRTSe5Gow4RiFo6EV9cLFceThuOVwu4HDObPIQBm6ZnfINpnA+m8idoj64fDPBKeMWR7VuAadb2iKiE/cFnJWrhAw4VAP3f0rJbfWp7eG21wV3VF1wR9UFd1RdcEfVTb3uHcJ6elVvv06rN/X++7R6Pzfcx94hrKcPtXcEa0p9/jytPv8AnIEPNo5BxKMAAAAASUVORK5CYII="/></svg>
-        </a>	
+  		<div class="top-header container-center">
+        <p class="header-logo">
+          <a class="site-logo" href="index.html">Техномарт</a>
+        </p>  
         <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-          <button class="visually-hidden" type="button">Отправка формы</button>
         	<input id="search" class="search-input" type="search" name="search" placeholder="Поиск:">
         	<label class="visually-hidden" for="search">Поиск:</label>
+          <button class="button-search" type="button" name="find">
             <svg class = "loop" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
+          </button>
         </form>
         <div class="header-container-user">
         	<a class="header-link bookmark" href="#">Закладки: 0</a>
@@ -28,7 +29,7 @@
         </div>
       </div>
     </div>
-    <div class ="bottom-header-container">
+    <div class ="bottom-header container-center">
     	<div class="header-contacts-profile">
       	<p class="about-company">Интернет-магазин строительных материалов и инструментов для ремонта</p>
       <div class="header-adress-information">
@@ -70,7 +71,7 @@
 
   	<h1 class="visually-hidden">Магазин «Техномарт»</h1>
   
-    <section class="features-list container">
+    <section class="features-list container-center">
     	<div class="features-row">
       	<div class="features-item materials">
           <div class="flag flag-new">новинка</div>
@@ -132,7 +133,7 @@
     </div> 
     </section>
 
-    <section class="popular-goods container">
+    <section class="popular-goods container-center">
     	<h2 class="visually-hidden">Раздел о продукции компании</h2>
       <div class="products-header">
       	<p>Популярные товары:</p>
@@ -190,7 +191,7 @@
         </li>
       </ul> 
     </section>
-    <section class="popular-manufacturers container">
+    <section class="popular-manufacturers container-center">
     	<h2 class="visually-hidden">Раздел о производителях</h2>
       <div class="manufacturers-header">
       	<p>Популярные производители:</p>
@@ -209,7 +210,7 @@
     </section>
   
   <div class="services-wrapper">
-    <section class="services container">
+    <section class="services container-center">
     	<h2>Сервисы</h2>
       	<p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
       <div class="service-slider-wrap">
@@ -218,13 +219,13 @@
         <input class="visually-hidden service-btn-3" type="radio" name="service-toggle" id="service-btn-3">
       <div class="services-slider">
       	<ul class="services-menu">
-      	  <li class="service-delivery">
+      	  <li class="service-delivery"><a class="delivery-link" href="#"></a>
             <label class="service-slider switch-btn-1" for="service-btn-1">Доставка</label>
           </li>
-        	<li class="service-warranty">
+        	<li class="service-warranty"><a class="warranty-link" href="#"></a>
             <label class="service-slider switch-btn-2" for="service-btn-2">Гарантия</label>
           </li>
-        	<li class="service-credit">
+        	<li class="service-credit"><a class="credit-link" href="#"></a>
             <label class="service-slider switch-btn-3" for="service-btn-3">Кредит</label>
           </li>  
         </ul>
@@ -252,7 +253,7 @@
     </section>
   </div>
 
-    <div class="services-container container">
+    <div class="services-container container-center">
     <section class="about-delivery">
     	<h2>Компания «Техномарт»</h2>
       <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит  равнодушными любителей сэкономить на гастарбайтерах.</p>
@@ -275,7 +276,7 @@
     </div>
   </main>
   <footer class="main-footer">
-  	<div class="container">
+  	<div class="footer-top container-center">
     	<div class="footer-main-navigation">
       	<div class="footer-logo-top">
        	 <a class="footer-logo">
