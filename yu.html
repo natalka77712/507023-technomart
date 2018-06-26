@@ -1,53 +1,74 @@
-	<div class="services-wrap">
-				<div class="container">
-					<section class="services">
-						<h2 class="services__title">Сервисы</h2>
-						<p class="services__description">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-						<div class="service-slider-wrap">
-							<input class="visually-hidden service-point-1" type="radio" name="service-slider" id="service-point1" checked>
-							<input class="visually-hidden service-point-2" type="radio" name="service-slider" id="service-point2">
-							<input class="visually-hidden service-point-3" type="radio" name="service-slider" id="service-point3">
-							<div class="flex-wrap-ie11fix">
-								<ul class="service-slider-controls">
-									<li class="service-slider-control">
-										<label class="service-slider__btn service-slider__btn--1" for="service-point1">Доставка</label>
-									</li>									
-									<li class="service-slider-control">
-										<label class="service-slider__btn service-slider__btn--2" for="service-point2">Гарантия</label>
-									</li>									
-									<li class="service-slider-control">
-										<label class="service-slider__btn service-slider__btn--3" for="service-point3">Кредит</label>
-									</li>
-								</ul>
-								<div class="service-slides">
-									<div class="service-slide service-slide--sp1">
-										<h3 class="service-slide__title">Доставка</h3>
-										<p class="service-slide__description service-slide__description--sp1">
-											Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! <br>
-											Ведь мы неплохо заработаем, <br> 
-											поднимая его на ваш этаж!
-										</p>
-										<img src="img/serv-slide1.jpg" width="630" height="284" alt="Доставка">
-									</div>									
-									<div class="service-slide service-slide--sp2">
-										<h3 class="service-slide__title">Гарантия</h3>
-										<p class="service-slide__description service-slide__description--sp2">
-											Если купленный у нас товар поломается или заискрится, <br>
-											а также в случае пожара, спровоцированного его возгоранием,  <br>
-											вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. <br>
-											Дом уж восстановите как-нибудь сами.
-										</p>
-										<img src="img/serv-slide2.jpg" width="630" height="284" alt="Гарантия">
-									</div>									
-									<div class="service-slide service-slide--sp3">
-										<h3 class="service-slide__title">Кредит</h3>
-										<p class="service-slide__description service-slide__description--sp3">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
-										<img src="img/serv-slide3.jpg" width="465" height="285" alt="Кредит">
-										<button class="red-btn service-slide__red-btn">Отправить заявку</button>
+<section class="filters">
+							<h2 class="filters-title">Фильтр:</h2>
+							<form class="form-filters" method="get" action="https://echo.htmlacademy.ru">
+								<fieldset class="filter-price">
+									<legend class="filter-price__title">Цена:</legend>
+									<div class="range-controls">
+										<div class="range-controls__bar">
+											<div class="range-controls__scale"></div>
+										</div>
+										<div class="range-controls__toggle range-controls__toggle--min"></div>
+										<div class="range-controls__toggle range-controls__toggle--max"></div>
 									</div>
-								</div>
-							</div>
-						</div>
-					</section>
-				</div>
-			</div>
+									<div class="price-controls">
+										<label class="visually-hidden" for="i_min">Минимум</label>
+										<input class="price-controls__min" id="i_min" name="min" type="text" value="0">
+										<div class="price-controls__separator">—</div>
+										<label class="visually-hidden" for="i_mах">Максимум</label>
+										<input class="price-controls__max" id="i_mах" name="max" type="text" value="30000">
+									</div>	
+								</fieldset>
+								<fieldset class="filter-manufacturers">
+									<legend class="filter-manufacturers__title">Производители:</legend>
+									<ul class="manufacturers-list">
+										<li class="manufacturers-list__item">
+											<input class="visually-hidden filter-input 
+												filter-input--checkbox" type="checkbox" name="manufacturer" 
+												value="1" id="bosch" checked>
+											<label for="bosch">Bosch</label>
+										</li>
+										<li class="manufacturers-list__item">
+											<input class="visually-hidden filter-input 
+												filter-input--checkbox" type="checkbox" name="manufacturer" 
+												value="2" id="interskol">
+											<label for="interskol">Интерскол</label>
+										</li>
+										<li class="manufacturers-list__item">
+											<input class="visually-hidden filter-input 
+												filter-input--checkbox" type="checkbox" name="manufacturer" 
+												value="3" id="makita" checked>
+											<label for="makita">Makita</label>
+										</li>
+										<li class="manufacturers-list__item">
+											<input class="visually-hidden filter-input 
+												filter-input--checkbox" type="checkbox" name="manufacturer" 
+												value="4" id="dewalt">
+											<label for="dewalt">Dewalt</label>
+										</li>
+										<li class="manufacturers-list__item">
+											<input class="visually-hidden filter-input 
+												filter-input--checkbox" type="checkbox" name="manufacturer" 
+												value="5" id="hitachi">
+											<label for="hitachi">Hitachi</label>
+										</li>
+									</ul>
+								</fieldset>
+								<fieldset class="filter-power">
+									<legend class="filter-power__title">Питание:</legend>
+									<ul class="power-list">
+										<li class="power-list__item">
+											<input class="visually-hidden filter-input
+												filter-input--radio" type="radio" name="power-group" 
+												value="1" id="pow" checked>
+											<label for="pow">Аккумуляторные</label>							
+										</li>
+										<li class="power-list__item">
+											<input class="visually-hidden filter-input
+												filter-input--radio" type="radio" name="power-group" 
+												value="2" id="con">
+											<label for="con">Сетевые</label>							
+										</li>
+									</ul>
+								</fieldset>
+								<button class="form-filters__btn" type="submit">Показать</button>
+							</form>
