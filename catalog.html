@@ -18,7 +18,7 @@
         <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
           <input id="search" class="search-input" type="search" name="search" placeholder="Поиск:">
           <label class="visually-hidden" for="search">Поиск:</label>
-            <button class="button-search" type="button">
+            <button class="button-search" type="submit">
               <svg class = "loop" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
           </button>
         </form>
@@ -27,11 +27,9 @@
           <a class="header-top-link order" href="#">Оформить заказ</a> 
         </div>
       </div>
-    </div>
-    <div class ="bottom-header container">
-      <div class="header-contacts-profile">
+      <div class="header-contacts-profile container">
         <p class="about-company">Интернет-магазин строительных материалов и инструментов для ремонта</p>
-      <div class="header-adress-information">
+      <div class="header-adress-information inner">
         <a class="contacts" href="tel:+78125550555">+7 (812) 555-05-55</a>
         <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       </div>
@@ -50,26 +48,27 @@
             <a class="user-identification logout-catalog" href="#">
               <svg class = "icon-logout" xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17"><path d="M21 8.5L12.125 0v6h-6v5h6v6z"/><path d="M3.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H4.116C1.938 0 1.112 1.81 1.087 3.027v10.946C1.112 15.189 1.938 17 4.116 17h5.027v-1.99H4.116c-.839 0-.992-.683-1.01-1.058z"/></svg>
             </a>
-          </li>  
-          <ul class="avtorized-list">
-            <li><a href="#" class="orders">Мои заказы</a></li>
-            <li><a href="#" class="account">Личный кабинет</a></li>
-          </ul>
+          </li> 
+          <li> 
+            <ul class="avtorized-list">
+              <li><a href="#" class="orders">Мои заказы</a></li>
+              <li><a href="#" class="account">Личный кабинет</a></li>
+            </ul>
+          </li>
         </ul>
       </div>
       </div>
-    <nav class="main-navigation">
-      <ul class="site-navigation">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="#">Компания</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li><a href="#">Новости</a></li>
-        <li><a href="#">Спецпредложения</a></li>
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>        
-    </nav>
-    </div>
+      <nav>
+        <ul class="site-navigation container">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="#">Компания</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="#">Спецпредложения</a></li>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul> 
+      </nav>       
   </header>
   <main>
   <div class="page container">
@@ -79,10 +78,8 @@
       <li><a href="#">Инструмент</a></li>
       <li><a>Перфораторы</a></li>
     </ul>
-    <div class="header-container">
     <div class="product-header">
       <h1>Перфораторы</h1>
-    </div>
     </div>
     <div class="catalog-columns-wrapper">
     <form class="filter" method="get" action="https://echo.htmlacademy.ru"> 
@@ -304,15 +301,15 @@
     </div>
   </main>
   <footer class="main-footer">
-    <div class="footer-main-navigation container">
-      <div class="footer-logo-top">
-       <a class="footer-logo">
-         <img src="img/logo-big.png" width="220" height="68" alt="Логотип Техномарт">
-       </a> 
-         <p class="footer-contacts">Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-         <p class="footer-phone"><a class ="phone" href="tel:+781255505555">+7 (812) 555-05-555</a></p>
+   <div class="footer-main-navigation container">
+     <div class="footer-logo-top">
+       <p class="footer-logo">
+         <a class="footer-logo-image">Техномарт</a>
+       </p> 
+        <p class="footer-contacts">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <p class="footer-phone"><a class ="phone" href="tel:+781255505555">+7 (812) 555-05-555</a></p>
       </div>
-       <div class="footer-navigation-wrapper">
+      <div class="footer-navigation-wrapper">
         <ul class="footer-nav-menu">
           <li><a class="footer-link" href="#">Компания</a></li>
           <li><a class="footer-link" href="#">Новости</a></li>
@@ -327,9 +324,9 @@
           <li><a class="footer-link2" href="#">Инструмент</a></li>
           <li><a class="footer-link2" href="#">Спецпредложения</a></li>
         </ul>
-     </div>
-     </div>
-      <div class="footer-bottom">
+      </div>
+    </div>
+    <div class="footer-bottom-container">
       <div class="footer-links container">
         <ul class="social-list">
           <li class="social-button">
