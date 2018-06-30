@@ -97,7 +97,7 @@
           <h2>Перфораторы</h2>
           <p>Настоящие мужские игрушки</p>
           <img src="img/slide-1.jpg" width="620" height="266" alt="slider-image-1">
-          <a class="slider-button bttn-more-information" href="#">Открыть каталог</a>
+          <a class="slider-button bttn-more-information" href="catalog.html">Открыть каталог</a>
         <div class="slider-toggle buttons">
           <button type="button" class="slider-previous button"></button>
           <button type="button" class="slider-next button"></button>
@@ -107,7 +107,7 @@
         	<h2>Дрели</h2>
           <p>Соседям на радость!</p>
           <img src="img/slide-2.jpg" width="620" height="266" alt="slider-image-2">
-          <a class="slider-button bttn-more-information" href="#">Открыть каталог</a>
+          <a class="slider-button bttn-more-information" href="catalog.html">Открыть каталог</a>
           <div class="slider-toggle buttons">
             <button type="button" class="slider-previous button"></button>
             <button type="button" class="slider-next button"></button>
@@ -327,15 +327,24 @@
     </div>
   </footer>
     
-  <section class="write-us-popup">
+  <section class="modal write-us-popup">
+    <button type="button" class="close-popup-bttn" aria-label="Закрыть всплывающее окно"></button>
+    <div class="modal-write-container">
+    <h3 class="visually-hidden">Напишите нам</h3>
   	<form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
- 	  	<label for="write-us-identification">Ваше имя:</label>
-      <input id="write-us-identification" class="input" type="text" placeholder="Представьтесь, пожалуйста">
-      <label for="write-us-email">Ваше email:</label>
-      <input id="write-us-email" class="input" type="text" placeholder="Введите ваш электронный адрес">
-      <label for="write-us-message">Текст письма:</label>
-      <input id="write-us-message" class="input" type="text" placeholder="В свободной форме">
-      <div class="write-button-popup" >
+    <div class="identification-wrapper">
+      <div class="left-column-popup">
+ 	  	 <label for="write-us identification-title">Ваше имя:</label>
+       <input id="write-us-identification" class="input" type="text" placeholder="Представьтесь, пожалуйста">
+      </div>
+      <div class="right-column-popup">
+        <label for="write-us email-title">Ваше email:</label>
+        <input id="write-us-email" class="input" type="text" placeholder="Введите ваш электронный адрес">
+      </div>
+    </div>
+      <label class="message-popup title" for="write-us-message">Текст письма:</label>
+      <textarea class="message-popup-letter" id="write-us-message" placeholder="В свободной форме"></textarea>
+      <div class="write-button-popup">
       	<button class="popup-button" type="submit">Отправить</button>
        </div>
     </form>
