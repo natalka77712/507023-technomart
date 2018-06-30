@@ -286,8 +286,8 @@ input[type="radio"].visually-hidden {
   font-style: italic;
   padding: 0;
   margin:  0;
-  margin-right: 71px;
-  flex: 0 0 196px;
+  margin-right: 68px;
+  flex: 0 0 200px;
  }
 
 .header-adress-information {
@@ -299,8 +299,8 @@ input[type="radio"].visually-hidden {
   line-height: 21px;
   color: #ee3643;
   border: 3px solid #ffffff;
-  width: 270px;
-  padding: 9px 43px 8px 73px;
+  flex: 0 0 270px;
+  padding: 9px 46px 8px 73px;
   display: block;
   vertical-align: middle;
   box-sizing: border-box;
@@ -331,10 +331,7 @@ input[type="radio"].visually-hidden {
 
 .user-navigation {
   display: flex;
-   margin: 0;
-  margin-left: auto;
-  padding: 0;
-}
+ }
 
 .user-navigation,
 .user-navigation-catalog,
@@ -346,19 +343,13 @@ input[type="radio"].visually-hidden {
 
 .user-navigation .user-profile,
 .user-navigation .user-registration {
-	max-height: 45px;
 	box-sizing: border-box;
 	text-align: center;
   background-color: #ffffff;
 }
 
 .user-navigation .user-profile:first-child {
-  flex: 121px;
-  margin-right: 10px;
-}
-
-.user-navigation .user-profile:last-child {
-  flex: 150px;
+  margin-right: 5px;
 }
 
 .user-profile .user-identification,
