@@ -51,8 +51,8 @@
           </li> 
           <li> 
             <ul class="avtorized-list">
-              <li><a href="#" class="orders">Мои заказы</a></li>
-              <li><a href="#" class="account">Личный кабинет</a></li>
+              <li><a href="#" class="orders-account">Мои заказы</a></li>
+              <li><a href="#" class="orders-account">Личный кабинет</a></li>
             </ul>
           </li>
         </ul>
@@ -358,14 +358,13 @@
     </div>
   </footer>
    
-  <section class="order-popup">
-    <form class="order-basket-form" action="https://echo.htmlacademy.ru" method="post">
-      <p>Товар добавлен в корзину!</p>
-      <div class="order-popup-link">
-        <a class="placing-order" href="#">Оформить заказ</a>
-        <a class="shopping-continue" href="#">Продолжить покупки</a>
+  <section class="modal order-popup">
+  <button type="button" class="close-popup-bttn" aria-label="Закрыть всплывающее окно"></button>
+    <p class="order-confirmation">Товар добавлен в корзину!</p>
+      <div class="modal-button-popup">
+        <a class="placing-order bttn-more-information" href="#">Оформить заказ</a>
+        <a class="shopping-continue bttn-more-information" href="#">Продолжить покупки</a>
       </div>
-    </form>
   </section>
 
 </body>

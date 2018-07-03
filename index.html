@@ -84,42 +84,37 @@
         </div> 
       </div>
        
-    <div class="column-wrapper">
-    	<div class="block-slider-wrapper">
-        <input class="visually-hidden slider-left" type="radio" name="toggle" id="btn1" checked>
-        <input class="visually-hidden slider-right" type="radio" name="toggle" id="btn2">
-      <div class="slider-controls">
-        <label class="btn-controls current" for="btn1">Слайдер 1</label>
-        <label class="btn-controls not-active" for="btn2">Слайдер 2</label> 
-      </div>
+      <div class="column-wrapper">
+      <div class="block-slider-wrapper">             
       <div class="slider-inner">
+        <div class="slider-controls">
+          <button class="btn-controls not-active">Слайдер 1</button>
+          <button class="btn-controls current">Слайдер 2</button> 
+        </div>
+        <div class="slider-toggle buttons">
+          <button type="button" class="slider-button previous"></button>
+          <button type="button" class="slider-button next"></button>
+        </div>
         <article class="slider-item1 perforator">
           <h2>Перфораторы</h2>
           <p>Настоящие мужские игрушки</p>
           <img src="img/slide-1.jpg" width="620" height="266" alt="slider-image-1">
-          <a class="slider-button bttn-more-information" href="catalog.html">Открыть каталог</a>
-        <div class="slider-toggle buttons">
-          <button type="button" class="slider-previous button"></button>
-          <button type="button" class="slider-next button"></button>
-        </div>
+          <a class="slider-button-red bttn-more-information" href="catalog.html">Открыть каталог</a>
         </article>
         <article class="slider-item2 drill-current">
-        	<h2>Дрели</h2>
+          <h2>Дрели</h2>
           <p>Соседям на радость!</p>
           <img src="img/slide-2.jpg" width="620" height="266" alt="slider-image-2">
-          <a class="slider-button bttn-more-information" href="catalog.html">Открыть каталог</a>
-          <div class="slider-toggle buttons">
-            <button type="button" class="slider-previous button"></button>
-            <button type="button" class="slider-next button"></button>
-          </div>
+          <a class="slider-button-red bttn-more-information" href="catalog.html">Открыть каталог</a>
         </article>
-       </div>
+      </div>
       </div>
    
       <div class="features-column">
       	<div class="features-item discounts">
         	<h3>Скидки 50%</h3>
-          <a class="features-button btn-link" href="#">На 350 товаров</a>
+          <a class="features-button btn-link" href="#">На 350 товаров
+          </a>
         </div>
         <div class="features-item delivery">
         	<h3>Доставка</h3>
@@ -329,33 +324,34 @@
     
   <section class="modal write-us-popup">
     <button type="button" class="close-popup-bttn" aria-label="Закрыть всплывающее окно"></button>
+    <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
     <div class="modal-write-container">
     <h3 class="visually-hidden">Напишите нам</h3>
-  	<form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
     <div class="identification-wrapper">
-      <div class="left-column-popup">
- 	  	 <label for="write-us identification-title">Ваше имя:</label>
-       <input id="write-us-identification" class="input" type="text" placeholder="Представьтесь, пожалуйста">
-      </div>
-      <div class="right-column-popup">
-        <label for="write-us email-title">Ваше email:</label>
+      <p class="left-column-popup">
+ 	  	 <label for="write-us-title">Ваше имя:</label>
+       <input id="write-us-title" class="input" type="text" placeholder="Представьтесь, пожалуйста">
+      </p>
+      <p class="right-column-popup">
+        <label for="write-us-email">Ваше email:</label>
         <input id="write-us-email" class="input" type="text" placeholder="Введите ваш электронный адрес">
-      </div>
+      </p>
     </div>
       <label class="message-popup title" for="write-us-message">Текст письма:</label>
       <textarea class="message-popup-letter" id="write-us-message" placeholder="В свободной форме"></textarea>
-      <div class="write-button-popup">
-      	<button class="popup-button" type="submit">Отправить</button>
-       </div>
+    </div>
+    <div class="modal-button-popup">
+    	<button class="popup-button bttn-more-information" type="submit">Отправить</button>
+    </div>
     </form>
   </section>
 
-  <section class="map-popup">
+  <section class="modal map-popup">
   	<h2 class="visually-hidden">Как до нас добраться</h2>
     	<p>
       	<img src="img/map-popup.png" alt="Карта с адресом: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="940" height="446">
     	</p>
-    <button class="popup-close" type="button">Закрыть</button>
+    <button type="button" class="close-popup-bttn" aria-label="Закрыть всплывающее окно"></button>
   </section>
 
 </body>
