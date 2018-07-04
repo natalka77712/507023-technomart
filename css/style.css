@@ -208,6 +208,13 @@ input[type="radio"].visually-hidden {
       flex-basis: 160px; 
 }
 
+.inner .bookmark {
+  flex-basis: 160px;
+}
+
+.inner .order {
+  flex-basis: 150px;
+}
 
 .header-link.bookmark {
 	display: block;
@@ -223,7 +230,7 @@ input[type="radio"].visually-hidden {
 
 .header-top-link.order {
 	display: block;
-	padding: 13px 26px;
+	padding: 13px 21px;
 }
 
 .bookmark:active,
@@ -1849,7 +1856,7 @@ margin-right: 10px;
 }
 
 .container.inner {
-	padding-bottom: 39px;
+	padding-bottom: 37px;
 }
 
 .basket-active {
