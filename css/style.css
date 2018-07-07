@@ -316,10 +316,14 @@ input[type="radio"].visually-hidden {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 200px;
           flex: 0 0 200px;
- }
+}
+
+.inner .about-company {
+  margin-right: 70px;
+}
 
 .header-adress-information {
-  margin-right: 70px;
+  margin-right: 72px;
 }
 
 .contacts {
@@ -1230,11 +1234,11 @@ margin-right: 10px;
 }
 
 .services-description .warranty-description {
-	width: 310px;
+	width: 375px;
 }
 
 .services-description .credit-description {
-	width: 270px;
+	width: 280px;
 	margin-bottom: 26px;
 }
 
@@ -1328,6 +1332,10 @@ margin-right: 10px;
   min-height: 284px;
 }
 
+.service-delivery-active {
+  display: block;
+}
+
 .service-warranty-active {
 	display: none;
 }
@@ -1341,6 +1349,20 @@ margin-right: 10px;
 	top: 22px;
 	right: -4px;
 	z-index: -1;
+}
+
+.service-warranty-active img {
+  position: absolute;
+  top: 0;
+  right: -20px;
+  z-index: -1;
+}
+
+.service-credit-active img {
+  position: absolute;
+  top: 0;
+  right: -20px;
+  z-index: -1;
 }
 
 .services-description a {
@@ -2182,7 +2204,7 @@ margin-right: 10px;
   font-family: "PT Sans", sans-serif;
   position: relative;
   text-align: center;
-  padding: 8px 0;
+  padding: 9px 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #f7f3ec;
@@ -2469,7 +2491,7 @@ margin-right: 10px;
 }
 
 .products-catalog.inner {
-	margin-bottom: 31px;
+	margin-bottom: 32px;
 }
 
 .item-best:nth-child(3n) {
@@ -2559,14 +2581,14 @@ margin-right: 10px;
   font-weight: 400;
   text-transform: uppercase;
    margin: 0;
-  padding-bottom: 29px;
+  padding-bottom: 25px;
 }
 
 .perforators-description p {
   color: #000000;
   font-size: 13px;
   line-height: 24px;
-  font-family: "PT Sans", "New Times Roman", serif;
+  font-family: "PT Sans", sans-serif;
   margin: 0;
 }
 
