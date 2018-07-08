@@ -13,12 +13,12 @@
   	<div class="header-hot-keys">
   		<div class="top-header container">
         <p class="header-logo">
-          <a class="site-logo">Техномарт</a>
+          <a class="header-logo-link">Техномарт</a>
         </p>  
         <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
           <input id="search" class="search-input" type="search" name="search" placeholder="Поиск:">
           <label class="visually-hidden" for="search">Поиск:</label>
-            <button class="button-search" type="submit">
+            <button class="button-search" aria-label="Поиск" type="submit">
               <svg class = "loop" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
           </button>
         </form>
@@ -88,8 +88,8 @@
       <div class="block-slider-wrapper">             
       <div class="slider-inner">
         <div class="slider-controls">
-          <button class="btn-controls not-active">Слайдер 1</button>
-          <button class="btn-controls current">Слайдер 2</button> 
+          <button class="btn-controls not-active" type="button">Слайдер 1</button>
+          <button class="btn-controls current" type="button">Слайдер 2</button> 
         </div>
         <div class="slider-toggle buttons">
           <button type="button" class="slider-button previous"></button>
@@ -207,26 +207,26 @@
      
       <div class="services-slider">
       	<ul class="services-menu">
-      	  <li class="service-item active"><a class="delivery-link" href="#">Доставка</a>
+      	  <li class="service-item active"><a class="delivery-link" href="#delivery">Доставка</a>
           </li>
-        	<li class="service-item"><a class="warranty-link" href="#">Гарантия</a>
+        	<li class="service-item"><a class="warranty-link" href="#warranty">Гарантия</a>
           </li>
-        	<li class="service-item"><a class="credit-link" href="#">Кредит</a>
+        	<li class="service-item"><a class="credit-link" href="#credit">Кредит</a>
           </li>  
         </ul>
      
       	<ul class="services-description-list">
-        	<li class="services-description service-delivery-active">
+        	<li class="services-description service-delivery active">
           	<h3 id="delivery">Доставка</h3>
           	<p class="delivery-description">Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
           	<img src="img/delivery-image.png" alt="Информация о доставке" width="468" height="261">
         	</li>
-          <li class="services-description service-warranty-active">
+          <li class="services-description service-warranty">
           	<h3 id="warranty">Гарантия</h3>
           	<p class="warranty-description">Если купленный у нас товар поломается или заискрит,<br> а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br> Дом уж восстановите как-нибудь сами.</p>
           	<img src="img/warranty-image.png" alt="Информация о гарантии" width="465" height="285">
         	</li>
-        	<li class="services-description service-credit-active">
+        	<li class="services-description service-credit">
           	<h3 id="credit">Кредит</h3>
           	<p class="credit-description">Залезть в долговую яму стало проще!<br>Кредитные консультанты придут вам на помощь.</p>
           	<a class="send-request bttn-more-information" href="#">Отправить заявку</a>
@@ -263,7 +263,7 @@
 	 <div class="footer-main-navigation container">
 	   <div class="footer-logo-top">
  	     <p class="footer-logo">
-   		   <a class="footer-logo-image">Техномарт</a>
+   		   <a class="header-logo-link footer-logo-image">Техномарт</a>
    		 </p> 
         <p class="footer-contacts">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <p class="footer-phone"><a class ="phone" href="tel:+781255505555">+7 (812) 555-05-555</a></p>
