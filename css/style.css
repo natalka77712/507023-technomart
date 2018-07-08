@@ -366,7 +366,7 @@ input[type="radio"].visually-hidden {
 
 .user-navigation,
 .user-navigation-catalog,
-.avtorized-list {
+.authorized-list{
   list-style: none;
   margin: 0;
   padding: 0;
@@ -1563,6 +1563,10 @@ margin-right: 10px;
   display: block;
 }
 
+.social-button a {
+  padding: 10px;
+}
+
 .social-button:hover,
 .social-button:focus {
   background-color: #ee3643;
@@ -1635,7 +1639,7 @@ margin-right: 10px;
   display: none;
 }
 
-.write-us-popup {
+.contact-us {
   bottom: 200px;
   left: 50%;
   width: 620px;
@@ -1694,12 +1698,12 @@ margin-right: 10px;
   margin-bottom: 20px;
 }
 
-.write-us-form p {
+.contact-us-form p {
    margin: 0;
   padding: 0;
 }
 
-.write-us-form input[type="text"] {
+.contact-us-form input[type="text"] {
   box-sizing: border-box;
   width: 220px;
   padding: 10px 13px;
@@ -1712,7 +1716,7 @@ margin-right: 10px;
   border-radius: 2px;
 }
 
-.write-us-form input:focus {
+.contact-us-form input:focus {
   outline: none;
   border-color: #ee3643;
 }
@@ -1737,7 +1741,7 @@ margin-right: 10px;
   border-color: #ee3643;
 }
 
-.write-us-form label {
+.contact-us-form label {
   font-size: 18px;
   line-height: 18px;
   margin: 0;
@@ -1889,14 +1893,14 @@ margin-right: 10px;
   position: relative;
 }
 
-.avtorized-list .orders-account {
+.authorized-list .orders-account {
   text-decoration: underline;
   color: #32425c;
   font-size: 16px;
   line-height: 18px;
 }
 
-.avtorized-list {
+.authorized-list {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -1905,14 +1909,14 @@ margin-right: 10px;
 	margin: 0;
   padding: 0;
   margin-left: 20px;
+  position: relative;
 }
 
-.avtorized-list li:first-child {
+.authorized-list li:first-child {
 	margin-right: 30px;
-	position: relative;
 }
 
-.orders-account:first-child::after {
+.authorized-list li:not(:last-child)::after {
 	content: "";
 	position: absolute;
 	bottom: 10px;
@@ -1928,7 +1932,7 @@ margin-right: 10px;
   color: #ee3643;
 }
 
-.avtorized-list .orders-account:active {
+.authorized-list .orders-account:active {
 	color: rgba(0, 0, 0, 0.3);
 }
 
@@ -2078,7 +2082,7 @@ margin-right: 10px;
   font-weight: 400;
   text-align: center;
   font-family: "PTSansRegular", "Arial", sans-serif;
-  width: 95px;
+  width: 100%;
   border: none;
 }
 
@@ -2146,11 +2150,16 @@ margin-right: 10px;
   font-family: "PT Sans", sans-serif;
   position: relative;
   text-align: center;
-  padding: 9px 0;
+  padding: 9px 18px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #f7f3ec;
   border-radius: 5px;
+  width: 50%;
+}
+
+.price-controls label:first-child  {
+  margin-right: 30px;
 }
 
 .price-controls::before {
