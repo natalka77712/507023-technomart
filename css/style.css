@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Cuprum", "PT Sans", Arial, sans-serif;
+  font-family: Cuprum, Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
@@ -527,7 +527,7 @@ nav .site-navigation {
   color: #ffffff;
   font-size: 14px;
   line-height: 18px;
-  font-family: "Cuprum", sans-serif;
+  font-family: Cuprum, Arial, sans-serif;
   text-transform: uppercase;
   display: block;
   vertical-align: middle;
@@ -951,7 +951,7 @@ margin-right: 10px;
   color:white;
   font-size:14px;
   font-weight:normal;
-  font-family:"Cuprum", sans-serif;
+  font-family: Cuprum, Arial, sans-serif;
   line-height:18px;
   text-decoration:none;
   text-transform:uppercase;    
@@ -1027,7 +1027,7 @@ margin-right: 10px;
   font-size: 18px;
   line-height: 20px;
   color: #000000;
-  font-family: Pt Sans;
+  font-family: "PT Sans", Arial, sans-serif;
   font-weight: 700;
   margin-bottom: 9px;
   margin-top: 6px;
@@ -1051,7 +1051,7 @@ margin-right: 10px;
 .products-item .discount-price {
   font-size: 17px;
   line-height: 18px;
-  font-family: Pt Sans;
+  font-family: "PT Sans", Arial, sans-serif;
   font-weight: 700;
 }
 
@@ -1174,7 +1174,7 @@ margin-right: 10px;
   font-size: 13px;
   line-height: 24px;
   color: #000000;
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   margin: 0;
   margin-bottom: 71px;
   width: 400px;
@@ -1262,7 +1262,7 @@ margin-right: 10px;
           box-sizing: border-box;
 	font-size: 21px;
   line-height: 30px;
-  font-family: "Cuprum", "Arial", sans-serif;
+  font-family: Cuprum, Arial, sans-serif;
   color: #ffffff;
   display: block;
   vertical-align: middle;
@@ -1351,7 +1351,7 @@ margin-right: 10px;
   font-size: 13px;
   line-height: 24px;
   color: #000000;
-  font-family: "PTSansRegular", "Arial", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   margin: 0;
   padding: 0;
   margin-bottom: 24px;
@@ -1390,7 +1390,7 @@ margin-right: 10px;
 .about-contacts p {
 	font-size: 13px;
 	line-height: 24px;
-	font-family: "CuprumRegular", "Arial", sans-serif;
+	font-family: Cuprum, Arial, sans-serif;
 	width: 200px;
 	margin: 0;
 	padding: 0;
@@ -1713,7 +1713,7 @@ margin-right: 10px;
   padding: 10px 13px;
   font: inherit;
   color: #a9a9a9;
-  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   border: 2px solid #dee3e4;
@@ -1734,7 +1734,7 @@ margin-right: 10px;
   padding: 7px 13px;
   font-size: 13px;
   line-height: 18px;
-  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   border: 2px solid #dee3e4;
   border-radius: 2px;
   box-sizing: border-box;
@@ -1751,7 +1751,7 @@ margin-right: 10px;
   margin: 0;
   margin-bottom: 11px;
   color: #000000;
-  font-family: "CuprumRegular";
+  font-family: Cuprum, Arial, sans-serif;
 }
 
 .modal-button-popup {
@@ -1963,7 +1963,7 @@ margin-right: 10px;
 	position: relative;
   font-size: 13px;
   line-height: 18px;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
   margin-right: 42px;
 }
@@ -2067,7 +2067,7 @@ margin-right: 10px;
   line-height: 18px;
   font-weight: 400;
   text-transform: uppercase;
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
  }
 
 .filter-wrapper h2 {
@@ -2085,7 +2085,7 @@ margin-right: 10px;
   line-height: 18px;
   font-weight: 400;
   text-align: center;
-  font-family: "PTSansRegular", "Arial", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   width: 100%;
   border: none;
 }
@@ -2151,7 +2151,7 @@ margin-right: 10px;
  	font-size: 17px;
   line-height: 18px;
   font-weight: 400;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   position: relative;
   text-align: center;
   padding: 9px 18px;
@@ -2334,7 +2334,7 @@ margin-right: 10px;
   line-height: 18px;
   font-weight: 400;
   text-transform: uppercase;
-  font-family: "PTSansRegular", "Arial", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   border: 1px solid #c6c6c6;
   border-radius: 3px;
   padding: 9px 0;
@@ -2499,7 +2499,7 @@ margin-right: 10px;
           box-sizing: border-box;
   font-size: 13px;
 	line-height: 18px;
-	font-family: "PT Sans", "New Times Roman", serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	text-align: center;
   padding: 10px 15px;
   color: #000000;
@@ -2557,7 +2557,7 @@ margin-right: 10px;
   color: #000000;
   font-size: 13px;
   line-height: 24px;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   margin: 0;
 }
 
