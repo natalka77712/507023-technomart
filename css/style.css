@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Cuprum", PT Sans, sans-serif;
+  font-family: "Cuprum", "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
@@ -201,7 +201,7 @@ input[type="radio"].visually-hidden {
 
 .header-link.bookmark {
 	display: block;
-  padding: 12px 20px 13px 62px;
+  padding: 12px 27px 10px 60px;
 }
 
 .inner .bookmark {
@@ -1637,6 +1637,10 @@ margin-right: 10px;
   border-top: 7px solid #ee3643;
   z-index: 30;
   display: none;
+}
+
+.modal-show {
+  display: block;
 }
 
 .contact-us {
