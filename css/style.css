@@ -201,7 +201,7 @@ input[type="radio"].visually-hidden {
 
 .header-link.bookmark {
 	display: block;
-  padding: 12px 27px 10px 60px;
+  padding: 12px 30px 10px 62px;
 }
 
 .inner .bookmark {
@@ -256,8 +256,6 @@ input[type="radio"].visually-hidden {
 .header-link::before {
   content: "";
   position: absolute;
-  left: 28px;
-  top: 13px;
   background-repeat: no-repeat;
   background-position: center center;
   opacity: 0.3;
@@ -275,15 +273,20 @@ input[type="radio"].visually-hidden {
 .bookmark::before {
   width: 14px;
   height: 16px;
+  left: 30px;
   background-image: url("../img/icon-bookmark.svg");
 }                
 
-.basket::before,
-.basket-active::before {
+.basket::before {
   width: 15px;
   height: 15px;
+  left: 15px;
   background-image: url("../img/icon-cart.svg");
 }                
+
+.basket-active::before {
+  left: 20px;
+}
 
 .header-contacts-profile {
   display: -webkit-box;
@@ -320,9 +323,8 @@ input[type="radio"].visually-hidden {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 270px;
           flex: 0 0 270px;
-  padding: 7px 46px 8px 69px;
+  padding: 7px 49px 8px 69px;
   display: block;
-  vertical-align: middle;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
@@ -383,7 +385,6 @@ input[type="radio"].visually-hidden {
   line-height: 21px;
   padding: 11px 26px;
 	display: block;
-	vertical-align: middle;
   color: #000000;
 }
 
@@ -708,6 +709,7 @@ margin-right: 10px;
   padding: 23px 22px 22px 24px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  z-index: 0;
 }
 
 .drill-current {
@@ -722,6 +724,7 @@ margin-right: 10px;
 	-webkit-box-direction:normal;
 	    -ms-flex-direction:;
 	        flex-direction: 
+  background-color: #000000;
 }
 
 .slider-item1 h2,
@@ -1205,7 +1208,6 @@ margin-right: 10px;
   display: block;
   text-transform: uppercase;
   text-align: center;
-  vertical-align: middle;
   text-align: center;
   padding: 10px 25px;
   -webkit-box-sizing: border-box;
