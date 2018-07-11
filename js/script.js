@@ -1,14 +1,14 @@
  
-  var link = document.querySelector(".write-us");
-  var popup = document.querySelector(".contact-us");
-  var close = popup.querySelector(".close-popup-bttn");
+var link = document.querySelector(".write-us");
+var popup = document.querySelector(".contact-us");
+var close = popup.querySelector(".close-popup-bttn");
   
-  var form = popup.querySelector("form");
-  var user_name = popup.querySelector(".title");
-  var user_email = popup.querySelector(".email");
+var form = popup.querySelector("form");
+var user_name = popup.querySelector(".title");
+var user_email = popup.querySelector(".email");
   
-  var isStorageSupport = true;
-  var storage = "";
+var isStorageSupport = true;
+var storage = "";
 
   try {
     storage = localStorage.getItem("user_name");
@@ -58,10 +58,10 @@
   });
 
  
- var mapLink = document.querySelector(".about-map");
+var mapLink = document.querySelector(".about-map");
 
-  var mapPopup = document.querySelector(".map-popup");
-  var mapClose = mapPopup.querySelector("close-popup-bttn");
+var mapPopup = document.querySelector(".map-popup");
+var mapClose = mapPopup.querySelector("close-popup-bttn");
 
   mapLink.addEventListener("click", function (evt) {
     evt.preventDefault();
@@ -81,3 +81,39 @@
       }
     }
   });
+
+
+var goods = document.querySelector(".buy-button");
+var order = document.querySelector(".order-popup");
+var finish_order = order.querySelector(".close-popup-bttn");
+var continue_shopping = order.querySelector(".shopping-continue");
+  
+  for (var i = 0; i < goods.length; i++) {
+
+  goods[i].addEventListener("click", function (evt) {
+   evt.preventDefault();
+   order.classList.add("modal-show");
+   });
+ }
+  
+  finish_order.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    order.classList.remove("modal-show");
+   });
+  
+   continue_shopping.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    order.classList.remove("modal-show");
+   });
+  
+
+
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      if (order.classList.contains("modal-show")) {
+      	evt.preventDefault();
+        order.classList.remove("modal-show");
+      }
+    }
+  });
+};
