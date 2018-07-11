@@ -1352,7 +1352,7 @@ margin-right: 10px;
   font-family: "PT Sans", Arial, sans-serif;
   margin: 0;
   padding: 0;
-  margin-bottom: 24px;
+  margin-bottom: 23px;
   letter-spacing: 0.1px;
 } 
 
@@ -1399,7 +1399,7 @@ margin-right: 10px;
 .about-map img {
   width: 300px;
   height: 158px;
-  margin-bottom: 34px;
+  margin-bottom: 33px;
 }
 
 .more-details {
@@ -1959,7 +1959,6 @@ margin-right: 10px;
 .map-popup {
   bottom: 355px;
   left: 50%;
-  display: none;
   width: 940px;
   height: 446px;
   font-size: 0;
