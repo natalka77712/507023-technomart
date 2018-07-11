@@ -285,7 +285,7 @@ input[type="radio"].visually-hidden {
 .bookmark::before {
   width: 14px;
   height: 16px;
-  left: 30px;
+  left: 35px;
   background-image: url("../img/icon-bookmark.svg");
 }                
 
@@ -395,7 +395,7 @@ input[type="radio"].visually-hidden {
 .user-profile .user-registration {
   font-size: 21px;
   line-height: 21px;
-  padding: 11px 26px;
+  padding: 11px 25px;
   display: block;
   color: #000000;
 }
@@ -737,6 +737,7 @@ margin-right: 10px;
   text-transform: uppercase;
   z-index: 1;
   margin: 0;
+  margin-bottom: 4px;
 } 
 
 .slider-item1 p,
@@ -760,7 +761,7 @@ margin-right: 10px;
 .slider-item1 a,
 .slider-item2 a {
   position: relative;
-  top: 125px;
+  top: 121px;
   width: 195px;
 }
 
@@ -1341,7 +1342,7 @@ margin-right: 10px;
   text-transform: uppercase;
   margin: 0;
   padding: 0;
-  margin-bottom: 23px;
+  margin-bottom: 25px;
 } 
 
 .about-delivery p {
@@ -1352,6 +1353,7 @@ margin-right: 10px;
   margin: 0;
   padding: 0;
   margin-bottom: 24px;
+  letter-spacing: 0.1px;
 } 
 
 .delivery-detalization {
@@ -1387,7 +1389,7 @@ margin-right: 10px;
 .about-contacts p {
   font-size: 13px;
   line-height: 24px;
-  font-family: Cuprum, Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   width: 190px;
   margin: 0;
   padding: 0;
@@ -1397,7 +1399,7 @@ margin-right: 10px;
 .about-map img {
   width: 300px;
   height: 158px;
-  margin-bottom: 36px;
+  margin-bottom: 34px;
 }
 
 .more-details {
@@ -1973,7 +1975,7 @@ margin-right: 10px;
 }
 
 .main-header.inner {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .container.inner {
@@ -2037,7 +2039,7 @@ margin-right: 10px;
       flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  margin-left: 24px;
+  margin-left: 20px;
   position: relative;
 }
 
@@ -2090,7 +2092,7 @@ margin-right: 10px;
   line-height: 18px;
   font-family: "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
-  margin-right: 42px;
+  margin-right: 40px;
 }
 
 .breadcrumbs li:first-child {
@@ -2683,5 +2685,6 @@ margin-right: 10px;
   font-size: 13px;
   line-height: 24px;
   font-family: "PT Sans", Arial, sans-serif;
+  letter-spacing: 0.15px;
   margin: 0;
 }
