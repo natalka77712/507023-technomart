@@ -9,7 +9,7 @@ var user_email = document.querySelector(".email");
 
 var mapLink = document.querySelector(".about-map");
 var mapPopup = document.querySelector(".map-popup");
-var mapClose = document.querySelector(".close-popup-bttn");
+var mapClose = document.querySelector("#close_map");
 
 var isStorageSupport = true;
 var storage = "";
@@ -65,7 +65,8 @@ if (popup !== null && link !== null && form !== null ) {
 }
 
 if (mapLink !== null && mapPopup !== null && mapClose !== null) {
-   mapLink.addEventListener("click", function (evt) {
+
+  mapLink.addEventListener("click", function (evt) {
     evt.preventDefault();
     mapPopup.classList.add("modal-show");
   });
@@ -76,8 +77,8 @@ if (mapLink !== null && mapPopup !== null && mapClose !== null) {
   });
 
   window.addEventListener("keydown", function (evt) {
-    evt.preventDefault();
     if (evt.keyCode === 27) {
+      evt.preventDefault();
       if (mapPopup.classList.contains("modal-show")) {
         mapPopup.classList.remove("modal-show");
       }
@@ -90,8 +91,6 @@ var goods = document.querySelectorAll(".buy-button");
 var order = document.querySelector(".order-popup");
 var finish_order = document.querySelector(".close-popup-bttn");
 var continue_shopping = document.querySelector(".shopping-continue");
-
-console.log(goods);
 
 if (goods !== null && order !== null) {
 
